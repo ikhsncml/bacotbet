@@ -34,26 +34,23 @@ _get_ziplink () {
 
 _startbot () {
     cd $DIR/*
-    sleep 3
     echo "
 
         >><< --- >><< ---=>  Starting [X]  <=--- >><< --- >><<
 
     "
-    bash run
     sleep 5
+    bash run
 }
 
 setup_repo () {
     local zippath
     zippath="app/temp.zip"
-    echo "--->  Fetching Update from Upstream Repo ..."
-    echo
+    echo -e "--->  Fetching Update from Upstream Repo ...\n\n"
     wget -q $(_get_ziplink) -O "$zippath"
     echo "--->  Unpacking Data ..."
     unzip -qq "$zippath" -d "$DIR"
-    echo "Done"
-    echo
+    echo -e "Done\n\n"
     echo "--->  Cleaning ..."
     rm -rf "$zippath"
     echo "Done"
