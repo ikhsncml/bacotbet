@@ -150,4 +150,6 @@
 		{ "url": "https://github.com/chrismytton/heroku-buildpack-jq.git" },
 		{ "url": "https://github.com/justaprudev/heroku-buildpack-neofetch.git" },
 		{ "url": "https://github.com/ikhsncml/heroku-buildpack-mediainfo.git" },
-		{ "url": "heroku/python" }
+		{ "url":  "url": "heroku/python"
+  }]
+}
