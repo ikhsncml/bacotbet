@@ -26,7 +26,7 @@ _get_ziplink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO =~ $regex ]]
     then 
-        echo "${UPSTREAM_REPO}/archive/alpha.zip"
+        echo "${UPSTREAM_REPO}/archive/master.zip"
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL2NvZGUtcmdiL1VTRVJHRS1YL2FyY2hpdmUvYWxwaGEuemlw" | base64 -d
     fi
@@ -40,7 +40,7 @@ _startbot () {
 
     "
     sleep 5
-    bash run
+    python -m userbot 
 }
 
 setup_repo () {
